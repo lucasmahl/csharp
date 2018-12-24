@@ -9,6 +9,7 @@ using CursoCSharp.OO;
 using CursoCSharp.MetodosEFuncoes;
 using CursoCSharp.Excecoes;
 using CursoCSharp.API;
+using CursoCSharp.TopicosAvancados;
 
 namespace CursoCSharp {
     class Program {
@@ -91,7 +92,18 @@ namespace CursoCSharp {
                 //Api
                 { "Primeiro Arquivo- Api", PrimeiroArquivo.Executar},
                 { "Lendo arquivos - Api", LendoArquivos.Executar},
-
+                { "Exemplo File Info - Api", ExemploFileInfo.Executar},
+                { "Diretorios - Api", Diretorios.Executar},
+                { "Directory Info - Api", ExemploDirectoryInfo.Executar},
+                { "Exemplo Path - Api", ExemploPath.Executar},
+                { "Exemplo Date Time - Api", ExemploDateTime.Executar},
+                { "Exemplo TimeStamp - Api", ExemploTimeStamp.Executar},
+                //TOPICOS AVANÇADOS LINQ
+                { "Exemplo 1 LINQ - LINQ", LINQ1.Executar},
+                { "Exemplo 2 LINQ - LINQ", LINQ2.Executar},
+                { "Nullables - LINQ", Nullables.Executar},
+                { "Dynamics - Tópicos avançados", Dynamics.Executar},
+                { "Genéricos - Tópicos avançados", Genericos.Executar},
             });
 
             central.SelecionarEExecutar();
