@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+
+using System.Linq;
 using System.Text;
 
 namespace CursoCSharp.Colecoes
@@ -42,6 +44,38 @@ namespace CursoCSharp.Colecoes
             {
                 Console.WriteLine(palavra[i]);
             }
+
+            string[] lista = new string[4];
+            lista[0] = "Lucas";
+            lista[1] = "Carlos";
+            lista[2] = "Bia";
+            lista[3] = "Abrão";
+
+            Console.WriteLine("LISTA EM ORDEM ALFABÉTICA");
+
+            //array em ordem alfabetica
+            var selecao =
+                from s in lista
+                orderby s
+                select s;
+
+            foreach (var s in selecao) {
+                Console.WriteLine(s);
+            }
+
+            Console.WriteLine("LISTA NÚMERICA");
+            var list = new List<int> { 1, 8, 9, 2, 3, 576, 73, 1, 23, 10 };
+
+            var lista_ordenada =
+                from l in list
+                orderby l
+                select l;
+
+            foreach (var v in lista_ordenada)
+            {
+                Console.WriteLine(v);
+            }
         }
+
     }
 }
